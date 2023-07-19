@@ -15,7 +15,7 @@ public class MultipeObjectDeserialization {
         oos.writeObject(new Dog());
         oos.writeObject(new Cat());
         oos.writeObject(new Lion());
-        //Deserialization
+        //Deserialization in order
 
         FileInputStream fis = new FileInputStream("mul.txt");
         ObjectInputStream ois = new ObjectInputStream(fis);
