@@ -20,7 +20,8 @@ public class Account implements Serializable  {
     private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
         ois.defaultReadObject();
         String  epwd = (String)ois.readObject();
-        setPassword(epwd.substring(3));
+        password = epwd.substring(3);
+        //setPassword(epwd.substring(3));
     }
 
     public String getUsername() {
