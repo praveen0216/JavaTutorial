@@ -1,7 +1,6 @@
 package tutorial.java.serialization.runApp;
 
 import tutorial.java.serialization.model.Account;
-import tutorial.java.serialization.model.Dog;
 
 import java.io.*;
 

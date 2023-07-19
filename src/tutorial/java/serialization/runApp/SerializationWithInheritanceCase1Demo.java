@@ -8,10 +8,12 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class SerializationWithInheritanceDemo {
+public class SerializationWithInheritanceCase1Demo {
 
     /**
      * This code shows the behavior of Serialization w.r.t inheritance
+     *
+     * Case 1: When parent class implements Serializable and child class does not
      *
      * Animal class (Parent class) implements Serializable
      * But Elephant (Child class) does not implements Serializable
