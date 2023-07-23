@@ -1,8 +1,7 @@
 package tutorial.java.serialization.runApp;
 
 
-import tutorial.java.serialization.Car;
-import tutorial.java.serialization.model.Elephant;
+import tutorial.java.serialization.model.Car;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
