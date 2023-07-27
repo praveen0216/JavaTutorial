@@ -17,6 +17,6 @@ public class GmailValidationTest {
             return;
         }
         String regex = "[a-zA-Z0-9][a-zA-Z0-9_.]*@gmail[.]com";
-       System.out.println( "email : " + gmail + " isValid : " + gmail.matches(regex));
+        System.out.println( "email : " + gmail + " isValid : " + gmail.matches(regex));
     }
 }
