@@ -16,7 +16,7 @@ public class PatternSplitMethodDemo {
             System.out.println(str);
         }
 
-        Pattern dot =  Pattern.compile("[.]") ; // [.] or \\. 
+        Pattern dot =  Pattern.compile("[.]") ; // [.] or \\.
         String[] dots = dot.split(TARGET_WEBSITE);
         for (String str : dots) {
             System.out.println(str);
