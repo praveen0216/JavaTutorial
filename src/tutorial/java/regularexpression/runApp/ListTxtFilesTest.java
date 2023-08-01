@@ -13,7 +13,7 @@ public class ListTxtFilesTest {
         File f1 = new File("F:\\codebase\\JavaTutorial");
 
         String[] list = f1.list();
-        Pattern p = Pattern.compile("[0-9a-zA-Z_]+[.]txt");
+        Pattern p = Pattern.compile("[0-9a-zA-Z_]+[.](txt|erp)");
         for(String str : list) {
             Matcher m = p.matcher(str);
             if(m.find()) {

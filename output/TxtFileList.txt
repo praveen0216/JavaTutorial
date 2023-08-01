@@ -1,6 +1,8 @@
 acc.txt
 car.txt
 dog.txt
+dummy1.erp
+dummy2.erp
 elephant.txt
 mul.txt
 obj_graph.txt
