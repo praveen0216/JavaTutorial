@@ -1,0 +1,9 @@
+.git
+.idea
+.settings
+bin
+classes
+Dir1
+Dir2
+output
+src
