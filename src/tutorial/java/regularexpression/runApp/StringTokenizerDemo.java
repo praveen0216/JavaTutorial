@@ -1,4 +1,4 @@
-package tutorial.java.regularexpression;
+package tutorial.java.regularexpression.runApp;
 
 import java.util.StringTokenizer;
 

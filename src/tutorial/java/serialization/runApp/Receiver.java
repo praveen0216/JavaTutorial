@@ -1,6 +1,5 @@
 package tutorial.java.serialization.runApp;
 
-import tutorial.java.serialization.model.Account;
 import tutorial.java.serialization.model.Sky;
 
 import java.io.FileInputStream;

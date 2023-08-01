@@ -1,6 +1,5 @@
 package tutorial.java.serialization.model;
 
-import tutorial.java.serialization.model.Vechicle;
 
 import java.io.Serializable;
 
