@@ -1,0 +1,10 @@
+acc.txt
+car.txt
+dog.txt
+elephant.txt
+mul.txt
+obj_graph.txt
+output.txt
+pr.txt
+sky.txt
+testData.txt
