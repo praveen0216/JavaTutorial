@@ -49,5 +49,11 @@ public class DisplayFilesAndDirectories {
 
         onlyFiles.flush();
         onlyDirectory.flush();
+
+        file.setReadOnly();
+        directory.setReadOnly();
+
+        onlyFiles.close();
+        onlyDirectory.close();
     }
 }
