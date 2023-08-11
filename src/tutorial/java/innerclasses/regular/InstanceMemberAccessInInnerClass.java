@@ -1,4 +1,4 @@
-package tutorial.java.innerclasses;
+package tutorial.java.innerclasses.regular;
 
 public class InstanceMemberAccessInInnerClass {
 
