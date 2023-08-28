@@ -1,0 +1,24 @@
+In Java 11, there are several types of garbage collectors available. Here are the main ones:
+
+G1 Garbage Collector (G1GC): The G1 Garbage Collector is designed to provide high throughput and low-latency garbage collection.
+It divides the heap into regions and uses a combination of young and mixed collections to achieve its goals.
+
+Parallel Garbage Collector: Also known as the throughput collector,
+this collector uses multiple threads to perform the garbage collection tasks.
+It is suitable for applications that prioritize maximizing throughput while accepting some occasional latency spikes.
+
+Concurrent Mark-Sweep Garbage Collector (CMS): This collector focuses on reducing the pause times during garbage collection.
+It performs most of its work concurrently with the application threads, minimizing the impact on application response times.
+
+Serial Garbage Collector: The serial collector uses a single thread for garbage collection.
+It is best suited for single-threaded or small applications where low memory overhead is a concern.
+
+Epsilon Garbage Collector: The Epsilon GC is a no-op garbage collector that can be used for testing and performance analysis.
+It doesn't actually reclaim memory and is mainly used to explore the behavior of applications with unlimited memory.
+
+Z Garbage Collector (ZGC): Starting from Java 11, the Z Garbage Collector was introduced as an experimental feature.
+It focuses on low-latency garbage collection and aims to keep pause times consistently low even for large heaps.
+
+Remember that the availability and behavior of these garbage collectors might vary based on the JVM version and configuration.
+You can specify the garbage collector to use using JVM command-line options like -XX:+UseG1GC or -XX:+UseConcMarkSweepGC, etc.
+Always refer to the official documentation and resources for the most up-to-date information on garbage collectors in your specific Java version.
