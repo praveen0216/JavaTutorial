@@ -1,2 +1,3 @@
 tuning jvm:  https://marknienaber.medium.com/jvm-tuning-with-g1-gc-76f27535f054
 GC Internal: https://www.youtube.com/watch?v=UnaNQgzw4zY
+Analyse Heap Dump: https://www.devlane.com/blog/java-where-is-my-memory-heap-dump-analysis#:~:text=Java%20manages%20memory%20creating%20space,change%20while%20the%20application%20runs.&text=To%20begin%20with%2C%20the%20JVM,young%20generation%20and%20old%20generation.
