@@ -1,0 +1,56 @@
+package com.test.java.java8;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class CompareEmployeeBySalary {
+    public static void main(String[] args) {
+
+        List<Employee1> employeeList = new ArrayList<>();
+        employeeList.add(new Employee1(10, "Ram", LocalDate.now()));
+        employeeList.add(new Employee1(20, "Shyam", LocalDate.now()));
+        employeeList.add(new Employee1(30, "Hari", LocalDate.now()));
+
+        System.out.println(employeeList.stream()
+                .sorted(Comparator.comparing(Employee1::getSalary).reversed()).collect(Collectors.toList()).get(1));
+        System.out.println(employeeList.stream()
+                .sorted(Comparator.comparing(Employee1::getSalary).reversed()).map(employee1 -> employee1.getSalary()).collect(Collectors.toList()).get(1));
+        Employee1 employee1 = employeeList.stream()
+                .sorted(Comparator.comparing(Employee1::getSalary)).collect(Collectors.toList()).get(1);
+        System.out.println(employee1);
+    }
+
+
+}
+
+class Employee1 {
+    private int salary;
+    private String name;
+    private LocalDate dob;
+
+    public Employee1(int salary, String name, LocalDate dob) {
+        this.salary = salary;
+        this.name = name;
+        this.dob = dob;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee1{" +
+                "salary=" + salary +
+                ", name='" + name + '\'' +
+                ", dob=" + dob +
+                '}';
+    }
+}
