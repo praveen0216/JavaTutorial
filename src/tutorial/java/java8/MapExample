@@ -1,0 +1,40 @@
+package com.test.java.java8;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MapExample { public static void main(String[] args) {
+    List<Order> orders = new ArrayList<>();
+    orders.add(new Order(100, LocalDate.of(2023, Month.APRIL, 1)));
+    orders.add(new Order(200, LocalDate.of(2023, Month.MARCH, 15)));
+    orders.add(new Order(150, LocalDate.of(2023, Month.APRIL, 5)));
+    orders.add(new Order(50, LocalDate.of(2023, Month.APRIL, 10)));
+
+    int totalAmountForApril = orders.stream()
+            .filter(o -> o.getDate().getMonth() == Month.APRIL)
+            .mapToInt(Order::getAmount)
+            .sum();
+
+    System.out.println("Total amount for April: " + totalAmountForApril);
+}
+}
+
+class Order {
+    private int amount;
+    private LocalDate date;
+
+    public Order(int amount, LocalDate date) {
+        this.amount = amount;
+        this.date = date;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+}
