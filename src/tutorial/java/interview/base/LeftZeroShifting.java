@@ -1,4 +1,4 @@
-package tutorial.java.interviewques;
+package tutorial.java.interview.base;
 
 import java.util.*;
 import java.util.function.Predicate;

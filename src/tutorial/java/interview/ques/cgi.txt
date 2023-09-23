@@ -1,0 +1,2 @@
+1> PUT vs PATCH ?
+2> Authorization and Authentication

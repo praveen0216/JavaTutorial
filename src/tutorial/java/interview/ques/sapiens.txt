@@ -1,0 +1,5 @@
+1> Factory method belongs to which OOPs concept ?
+  --> Polymorphism
+2> Spring mvc vs Spring boot ?
+3> Can we run GC at any time ?
+4> Abstract class vs Interface ?
