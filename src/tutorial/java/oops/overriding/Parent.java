@@ -1,4 +1,4 @@
-package tutorial.java.oops;
+package tutorial.java.oops.overriding;
 
 public class Parent {
 

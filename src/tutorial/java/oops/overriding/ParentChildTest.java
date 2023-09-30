@@ -1,4 +1,4 @@
-package tutorial.java.oops;
+package tutorial.java.oops.overriding;
 
 public class ParentChildTest {
 
@@ -21,7 +21,7 @@ public class ParentChildTest {
          * Compile time Exception
          * java: cannot find symbol
          *   symbol:   method m2()
-         *   location: variable p of type tutorial.java.oops.Parent
+         *   location: variable p of type tutorial.java.oops.overriding.Parent
          */
         //p.m2();
 
@@ -36,7 +36,7 @@ public class ParentChildTest {
         /**
          * Child class reference holding parent class object not possible
          *
-         * java: incompatible types: tutorial.java.oops.Parent cannot be converted to tutorial.java.oops.Child
+         * java: incompatible types: tutorial.java.oops.overriding.Parent cannot be converted to tutorial.java.oops.overriding.Child
          */
 
         //Child c2 = new Parent();

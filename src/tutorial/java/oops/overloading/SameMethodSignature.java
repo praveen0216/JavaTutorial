@@ -1,4 +1,4 @@
-package tutorial.java.oops;
+package tutorial.java.oops.overloading;
 
 public class SameMethodSignature {
 
@@ -7,7 +7,7 @@ public class SameMethodSignature {
     }
 
     /**
-     * m()' is already defined in 'tutorial.java.oops.SameMethodSignature'
+     * m()' is already defined in 'tutorial.java.oops.overloading.SameMethodSignature'
      *
      * @return
      */
