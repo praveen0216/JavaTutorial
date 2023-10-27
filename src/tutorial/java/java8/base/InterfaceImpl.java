@@ -15,5 +15,9 @@ public class InterfaceImpl implements InterfaceA, InterfaceB {
         InterfaceA.super.display();
     }
 
+    public static void main(String[] args) {
+        System.out.println(InterfaceB.x);
+    }
+
 
 }
